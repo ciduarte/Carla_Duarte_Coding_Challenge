@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+          name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>Campus Emergency Guide</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="section-padding">
+      <div class="container">
+        <div class="row accordion resource-container" id="resource-row">
+          <!--        first row -->
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-0">
+            <button id="contacts-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#contacts-desc">EMERGENCY CONTACTS & RESOURCES</button>
+          </div>
+          <div id="contacts-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+            <h4>Emergency Contacts & Resources</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#contacts-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-0 order-md-0 order-lg-0 order-xl-0">
+            <button id="reporting-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#reporting-desc">REPORTING EMERGENCIES</button>
+          </div>
+          <div id="reporting-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+            <h4>Reporting Emergencies</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#reporting-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-1 order-md-0 order-lg-0 order-xl-0">
+            <button id="shooter-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#shooter-desc">ACTIVE SHOOTER</button>
+          </div>
+          <div id="shooter-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-2 order-md-1 order-lg-1 order-xl-1">
+            <h4>Active Shooter</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#shooter-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-1 order-md-0 order-lg-0 order-xl-0">
+            <button id="hostage-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#hostage-desc">HOSTAGE SITUATION</button>
+          </div>
+          <div id="hostage-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-2 order-md-1 order-lg-1 order-xl-1">
+            <h4>Hostage Situation</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#hostage-desc">Close</button>
+            </div>
+          </div>
+
+          <!--        second row -->
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-2 order-md-1 order-lg-1 order-xl-1">
+            <button id="lockdown-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#lockdown-desc">LOCKDOWN</button>
+          </div>
+          <div id="lockdown-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-3 order-md-2 order-lg-2 order-xl-2">
+            <h4>Lockdown</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#lockdown-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-2 order-md-1 order-lg-1 order-xl-1 ">
+            <button id="shelter-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#shelter-desc">SHELTER-IN-PLACE</button>
+          </div>
+          <div id="shelter-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-3 order-md-2 order-lg-2 order-xl-2">
+            <h4>Shelter-in-Place</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#shelter-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-3 order-md-1 order-lg-1 order-xl-1">
+            <button id="fire-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#fire-desc">FIRE</button>
+          </div>
+          <div id="fire-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-4 order-md-2 order-lg-2 order-xl-2">
+            <h4>Fire</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#fire-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-3 order-md-1 order-lg-1 order-xl-1">
+            <button id="evac-fire-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#evac-fire-desc">FIRE EVACUATION</button>
+          </div>
+          <div id="evac-fire-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-4 order-md-2 order-lg-2 order-xl-2">
+            <h4>Fire Evacuation</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#evac-fire-desc">Close</button>
+            </div>
+          </div>
+
+          <!--        third row -->
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-4 order-md-2 order-lg-2 order-xl-2">
+            <button id="bomb-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#bomb-desc">BOMB THREAT</button>
+          </div>
+          <div id="bomb-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-5 order-md-3 order-lg-3 order-xl-3">
+            <h4>Bomb Threat</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#bomb-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-4 order-md-2 order-lg-2 order-xl-2">
+            <button id="package-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#package-desc">SUSPICIOUS PACKAGE</button>
+          </div>
+          <div id="package-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-5 order-md-3 order-lg-3 order-xl-3">
+            <h4>Suspicious Package</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#package-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-5 order-md-2 order-lg-2 order-xl-2">
+            <button id="hazardous-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#hazardous-desc">HAZARDOUS MATERIAL INCIDENT</button>
+          </div>
+          <div id="hazardous-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-6 order-md-3 order-lg-3 order-xl-3">
+            <h4>Hazardous Material Incident</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#hazardous-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-5 order-md-2 order-lg-2 order-xl-2">
+            <button id="notification-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#notification-desc">EMERGENCY NOTIFICATIONS</button>
+          </div>
+          <div id="notification-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-6 order-md-3 order-lg-3 order-xl-3">
+            <h4>Emergency Notifications</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#notification-desc">Close</button>
+            </div>
+          </div>
+
+          <!--        fourth row -->
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-6 order-md-3 order-lg-3 order-xl-3">
+            <button id="evac-disabled-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#evac-disabled-desc">EVACUATING THE DISABLED</button>
+          </div>
+          <div id="evac-disabled-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-7 order-md-4 order-lg-4 order-xl-4">
+            <h4>Evacuating the Disabled</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#evac-disabled-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-6 order-md-3 order-lg-3 order-xl-3">
+            <button id="medical-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#medical-desc">MEDICAL EMERGENCY</button>
+          </div>
+          <div id="medical-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-7 order-md-4 order-lg-4 order-xl-4">
+            <h4>Medical Emergency</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#medical-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-7 order-md-3 order-lg-3 order-xl-3">
+            <button id="student-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#student-desc">STUDENT IN DISTRESS</button>
+          </div>
+          <div id="student-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-8 order-md-4 order-lg-4 order-xl-4">
+            <h4>Student in Distress</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#student-desc">Close</button>
+            </div>
+          </div>
+
+          <div class="resource col-sm-6 col-md-3 col-lg-3 col-xl-3 order-sm-7 order-md-3 order-lg-3 order-xl-3">
+            <button id="weather-btn" type="button" class="btn btn-dark resource-btn" data-toggle="collapse" data-target="#weather-desc">WEATHER EMERGENCY</button>
+          </div>
+          <div id="weather-desc" data-parent="#resource-row" class="resource-description mt-2 mb-2 collapse col-12 order-sm-8 order-md-4 order-lg-4 order-xl-4">
+            <h4>Weather Emergency</h4>
+            <p>Information goes here.</p>
+            <div style="text-align: right;">
+              <button type="button" class="btn btn-outline-dark close-btn" data-toggle="collapse" data-target="#weather-desc">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let selectedResource = '';
+
+      // change color of active button (on click of other resource)
+      document.querySelectorAll('.resource-btn').forEach(function(e) {
+        e.addEventListener('click', function() {
+          if (selectedResource) {
+            document.querySelector(selectedResource).style.backgroundColor = '#343a40';
+            document.querySelector(selectedResource).style.border = '#343a40';
+          }
+
+          const newResource = '#' + this.id;
+          if (selectedResource !== newResource) {
+            this.style.backgroundColor = '#bb0016';
+            this.style.border = '#bb0016';
+          } else {
+            this.style.backgroundColor = '#343a40';
+            this.style.border = '#343a40';
+          }
+          selectedResource = newResource;
+        })
+      });
+
+      // change color of active button (on click of close)
+      document.querySelectorAll('.close-btn').forEach(function(e) {
+        e.addEventListener('click', function() {
+          document.querySelectorAll('.resource-btn').forEach(function(e) {
+            e.style.backgroundColor = '#343a40';
+            e.style.border = '#343a40';
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
